@@ -1,0 +1,6 @@
+Uma aplicação Android pode possuir 
+
+	* Activities (telas)
+	* Broadcast reciever
+	* ?
+	* Content provider

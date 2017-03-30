@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Votacao</string>
+    <string name="radio1">Prefeito</string>
+    <string name="radio2">Vereador</string>
+
+    <string-array name="candidatos">
+        <item>Fulano - Partido do Pato de Borracha</item>
+        <item>Ciclano - Partido do Pato de Borracha</item>
+    </string-array>
+</resources>

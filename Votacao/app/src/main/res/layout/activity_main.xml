@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.fiap.votacao.MainActivity">
+
+    <ImageView android:id="@+id/foto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/brasao"/>
+
+    <RadioGroup android:id="@+id/radGroup"
+        android:layout_below="@id/foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/radioPrefeito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio1"/>
+
+        <RadioButton android:id="@+id/radioVereador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio2"/>
+
+    </RadioGroup>
+
+    <Spinner  android:id="@+id/candidato"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/radGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/candidatos"></Spinner>
+
+    <Button android:id="@+id/btnVotar"
+        android:layout_below="@id/candidato"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votar"
+        android:onClick="votar"/>
+
+    <TextView android:id="@+id/txtPrefeito"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnVotar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Prefeito"/>
+
+    <TextView android:id="@+id/txtVereador"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtPrefeito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Vereador"/>
+
+
+
+</RelativeLayout>
